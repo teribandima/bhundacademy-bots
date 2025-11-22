@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BHUNDACADEMY 🤩</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#1f1c2c,#928dab,#2b5876);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  @keyframes gradientMove {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+  }
+
+  .glass-card {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1.5rem;
+    padding: 28px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg,#ffafbd,#ffc3a0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+
+  .desc p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .desc .line1 { font-size: 1.3rem; font-weight: 700; color: #fff; }
+  .desc .line2 { font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+  .desc .line3 { font-size: 0.95rem; color: rgba(255,255,255,0.7); }
+
+  .btn-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    padding: 14px 18px;
+    border-radius: 999px;
+    background: linear-gradient(90deg,#ffafbd,#ffc3a0);
+    color: #1f1c2c;
+    font-weight: 700;
+    font-size: 1.15rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  .btn-link:hover { transform: translateY(-2px) scale(1.02); }
+
+  .main-site-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg,#6a11cb,#2575fc);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  .main-site-btn:hover { transform: translateY(-2px) scale(1.02); }
+
+  /* Countdown ring */
+  .ring-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+  }
+  svg { transform: rotate(-90deg); }
+  .ring-bg { stroke: rgba(255,255,255,0.1); stroke-width: 10; fill: none; }
+  .ring-fg { stroke: url(#grad); stroke-width: 10; fill: none; stroke-linecap: round; transition: stroke-dashoffset 0.3s linear; }
+  .ring-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  @media(max-width:480px){
+    .glass-card { padding: 20px; }
+    .title { font-size: 1.6rem; }
+    .btn-link { font-size: 1rem; padding: 12px 14px; }
+    .ring-container { width: 100px; height: 100px; }
+    .ring-text { font-size: 1.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="glass-card">
+  <img class="logo" src="https://i.ibb.co/PV7wZVd/x.jpg" alt="Logo">
+
+  <div class="title">𝗠𝗨𝗧𝗛𝗔𝗟𝗢𝗡𝗚𝗢</div>
+
+  <div class="desc text-center space-y-2">
+    <p class="line1">🚀 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥 𝐢𝐬 𝐑𝐞𝐚𝐝𝐲 ✅</p>
+    <p class="line2">𝗧𝗮𝗽 𝘁𝗵𝗲 𝗕𝘂𝘁𝘁𝗼𝗻 𝗕𝗲𝗹𝗼𝘄 𝘁𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗜𝗻𝘀𝘁𝗮𝗻𝘁𝗹𝘆 👉</p>
+    <p class="line3">⏳ 𝐈𝐟 𝐲𝐨𝐮 𝐝𝐨𝐧'𝐭 𝐂𝐥𝐢𝐜𝐤, 𝐲𝐨𝐮 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜𝐚𝐥𝐥𝐲 𝐑𝐞𝐝𝐢𝐫𝐞𝐜𝐭𝐞𝐝 𝐢𝐧 <span id="countText">10</span>s.</p>
+  </div>
+
+  <a id="botButton" href="#" class="btn-link">
+    <img id="botImg" src="" alt="Bot" class="logo" style="width:40px;height:40px;">
+    <span id="botName"></span>
+  </a>
+
+  <!-- Countdown ring -->
+  <div class="ring-container">
+    <svg viewBox="0 0 160 160">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ffafbd"/>
+          <stop offset="50%" stop-color="#ffc3a0"/>
+          <stop offset="100%" stop-color="#ff6a88"/>
+        </linearGradient>
+      </defs>
+      <circle class="ring-bg" cx="80" cy="80" r="58"></circle>
+      <circle class="ring-fg" cx="80" cy="80" r="58"></circle>
+    </svg>
+    <div class="ring-text" id="countdown">10</div>
+  </div>
+
+  <a href="https://yashyasag.github.io/hiddens_officials" class="main-site-btn mt-4">🌐 𝗩𝗶𝘀𝗶𝘁 𝗠𝗮𝗶𝗻 𝗪𝗲𝗯𝘀𝗶𝘁𝗲 🤝</a>
+</div>
+
+<script>
+(function(){
+  const REDIRECT_SECONDS = 10;
+  const bots = [
+    { url: "https://t.me/MUTHALONGOBOT", name: "‼️ CLICK ME ‼️", img: "https://i.ibb.co/5WNTW3KT/x.jpg" },
+    { url: "https://t.me/MUTHALONGOBOT", name: "‼️ CLICK ME ‼️", img: "https://i.ibb.co/5WNTW3KT/x.jpg" }
+  ];
+  const selectedBot = bots[Math.floor(Math.random() * bots.length)];
+
+  // Extract the token from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const token = urlParams.get('token') || 'default'; // Fallback to 'default' if no token is provided
+
+  // Append the token to the bot URL as a start parameter
+  const redirectUrl = `${selectedBot.url}?start=${encodeURIComponent(token)}`;
+
+  const botButton = document.getElementById("botButton");
+  const botImg = document.getElementById("botImg");
+  const botName = document.getElementById("botName");
+  const countdownEl = document.getElementById("countdown");
+  const countText = document.getElementById("countText");
+  const ring = document.querySelector(".ring-fg");
+
+  botButton.href = redirectUrl;
+  botImg.src = selectedBot.img;
+  botName.textContent = selectedBot.name;
+
+  const R = 58;
+  const C = 2 * Math.PI * R;
+  ring.style.strokeDasharray = C;
+
+  let remaining = REDIRECT_SECONDS;
+
+  function updateRing() {
+    ring.style.strokeDashoffset = C * remaining / REDIRECT_SECONDS;
+    countdownEl.textContent = remaining;
+    countText.textContent = remaining;
+  }
+
+  updateRing();
+
+  const interval = setInterval(() => {
+    remaining--;
+    if (remaining <= 0) {
+      clearInterval(interval);
+      window.location.href = redirectUrl;
+    } else {
+      updateRing();
+    }
+  }, 1000);
+})();
+</script>
+
+</body>
+  </html>
